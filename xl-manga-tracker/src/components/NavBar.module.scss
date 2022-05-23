@@ -1,0 +1,23 @@
+@use "../global.scss" as global;
+
+.ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.li {
+  list-style: none;
+  a {
+    text-decoration: none;
+    padding: 0.2rem;
+  }
+  a:visited {
+    color: global.$mainText;
+  }
+  a:hover {
+    color: global.$popColor;
+  }
+  a:active {
+    border-bottom: 1px solid global.$popColor;
+  }
+}
